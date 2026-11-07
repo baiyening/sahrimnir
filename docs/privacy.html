@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="rclone-touyanshe 隐私政策：Google Drive 数据访问、用途、存储、共享、保留、删除和授权撤销说明。">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>隐私政策 · rclone-touyanshe</title>
+  <style>
+    :root{color-scheme:light;--ink:#172e35;--muted:#526a70;--accent:#086756;--line:#dce7e3;--paper:#f5f8f5}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.9}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid #ddaa42;outline-offset:5px}header,main,footer{max-width:870px;margin:auto;padding-left:28px;padding-right:28px}header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}.brand{font-size:18px;font-weight:750;letter-spacing:-.4px;text-decoration:none;color:var(--ink)}header>a:last-child{font-size:14px}main{padding-top:46px;padding-bottom:42px}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:750;color:var(--accent)}h1{font-size:38px;line-height:1.3;margin:14px 0 12px}h2{font-size:20px;line-height:1.5;margin:32px 0 12px}p{margin:0 0 15px}li{margin:8px 0}.meta{font-size:14px;color:var(--muted);margin-bottom:24px}.intro{background:white;border:1px solid var(--line);border-radius:10px;padding:22px}.intro p{margin:0}code{overflow-wrap:anywhere;font-size:.88em;background:#e8efeb;padding:2px 5px;border-radius:4px}footer{padding-top:24px;padding-bottom:30px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}@media(max-width:600px){header,main,footer{padding-left:22px;padding-right:22px}main{padding-top:30px}h1{font-size:32px}header{align-items:flex-start;flex-direction:column;gap:8px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="./">rclone-touyanshe</a><a href="./">返回应用首页</a></header>
+  <main>
+    <div class="eyebrow">PRIVACY POLICY</div>
+    <h1>隐私政策</h1>
+    <p class="meta">应用：rclone-touyanshe · 生效及更新日期：2026 年 11 月 8 日</p>
+    <div class="intro"><p>本政策说明 rclone-touyanshe 如何处理 Google 用户数据，以及本说明网站的访问数据。本应用由 GitHub 用户 <a href="https://github.com/baiyening">baiyening</a> 维护，供维护者本人使用 rclone 进行文件同步和备份，不提供公众注册服务。</p></div>
+    <section>
+      <h2>1. 访问哪些数据</h2>
+      <p>经账号所有者授权后，rclone 使用 Google Drive 应用程序接口（API）访问完成文件操作所需的数据，包括文件和文件夹名称、标识符、路径、大小、修改时间、校验信息、相关文件属性，以及任务涉及的文件内容。</p>
+      <p>本应用请求 <code>https://www.googleapis.com/auth/drive</code> 权限，可在该权限范围内列出、读取、创建、更新、移动和删除文件。该权限不限于本应用新建的文件。Google 的开放授权机制（OAuth 2.0）提供访问令牌和刷新令牌；本应用不获取 Google 账号密码。</p>
+    </section>
+    <section>
+      <h2>2. 数据用途与限制</h2>
+      <p>数据仅用于维护者配置的文件传输、同步、备份、恢复，以及相关任务状态检查和故障排查。具体操作取决于维护者执行的命令和任务配置。</p>
+      <p>本应用不出售 Google 用户数据，不将其用于广告投放、用户画像或训练通用人工智能模型。通过 Google API 获得的信息，其使用和转移遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a>，包括限制使用要求。</p>
+    </section>
+    <section>
+      <h2>3. 数据存储与保护</h2>
+      <p>rclone 在维护者控制的设备或服务器上运行。授权令牌保存在相应运行环境的 rclone 配置或凭据存储中；文件按任务配置保存在 Google Drive、本地设备或维护者指定的存储目标。任务日志可能包含文件名称、路径、传输状态和错误信息。</p>
+      <p>Google API 通信使用 HTTPS 加密传输。设备、配置、日志和目标存储的访问由维护者管理。授权令牌、客户端密钥和云盘文件不发布到本网站或公开代码仓库。</p>
+    </section>
+    <section>
+      <h2>4. 共享与第三方服务</h2>
+      <p>文件操作所需的数据会传送至 Google，以及维护者明确配置的源或目标存储服务。本应用不为广告、数据交易或与文件操作无关的用途向第三方提供 Google 用户数据。Google 与其他存储服务分别按其自身隐私政策处理接收到的数据。</p>
+      <p>本公开网站由 GitHub Pages 托管，只提供应用说明，不运行 Google 登录或文件传输功能，不接收云盘内容及授权令牌。</p>
+    </section>
+    <section>
+      <h2>5. 数据保留、删除与撤销授权</h2>
+      <ul>
+        <li>同步或备份的文件保留到维护者主动删除，或由其配置的同步及保留规则删除为止；本应用不设置统一的自动删除期限。</li>
+        <li>配置中的授权令牌保留到维护者删除相应凭据为止。账号所有者可随时在 <a href="https://myaccount.google.com/connections">Google 账号的第三方连接页面</a>移除 rclone-touyanshe 的访问权限，使授权失效。</li>
+        <li>撤销授权会阻止后续使用该授权访问 Google Drive，但不会自动删除已经复制的文件、运行日志或配置。彻底清理时，需要分别删除运行设备中的配置、日志，以及各存储位置的文件副本，并按需要清空对应回收站。</li>
+      </ul>
+    </section>
+    <section>
+      <h2>6. 网站访问数据</h2>
+      <p>本网站不添加广告、访问统计脚本、跟踪 Cookie 或数据收集表单。作为托管提供方，GitHub 可能为提供服务和保障安全处理网络地址及请求等技术信息，详见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。点击外部链接后，适用目标网站的隐私政策。</p>
+    </section>
+    <section>
+      <h2>7. 联系与政策更新</h2>
+      <p>应用及隐私问题可通过 <a href="https://github.com/baiyening/sahrimnir/issues">GitHub Issues</a>联系维护者；涉及私密内容时，请使用 Google 授权页面列出的用户支持邮箱。请勿在公开问题中提交云盘文件、密码、密钥或授权令牌。</p>
+      <p>如数据处理方式改变，维护者会先更新本政策及页面日期；涉及新的数据用途或访问权限时，在处理前取得相应授权。</p>
+    </section>
+  </main>
+  <footer>rclone-touyanshe · <a href="./">应用首页</a> · <a href="./#terms">使用说明</a></footer>
+</body>
+</html>
